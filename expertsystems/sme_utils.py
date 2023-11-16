@@ -1,0 +1,12 @@
+THRESHOLD_VOLUME = 100_000_000  # Example: 100 million shares
+LARGE_CAP_THRESHOLD = 10e9  # Example: $10 billion
+MEDIUM_CAP_THRESHOLD = 2e9  # Example: $2 billion
+VALUE_PE_THRESHOLD = 20  # Example: P/E ratio of 20
+VALUE_DIV_YIELD_THRESHOLD = 0.02  # Example: 2% dividend yield
+EARNINGS_GROWTH_THRESHOLD = 0.1  # Example: 10% earnings growth
+SECTOR_GROWTH_THRESHOLD = 0.1  # Example: 10% sector growth
+DEBT_EQUITY_THRESHOLD = 0.5  # Example: 0.5 debt/equity ratio
+ROE_THRESHOLD = 0.15  # Example: 15% return on equity
+LOW_PRICE_THRESHOLD = 200  # Example: $200
+LOW_PEGY_RATIO_THRESHOLD = 1  # Example: PEGY ratio of 1
+EPSILON = 0.0001  # Example: 0.0001

@@ -1,0 +1,18 @@
+name,ticker,price,pe,dividend_yield,volume,market_cap,earnings_growth,sector_growth,sector,debt_equity_ratio,roe
+Fort Motor Company,F,10.40,6.41,0.0611,67598818,31.31,-.3045,0.028,Consumer Discretionary,2.1485,.1420
+General Electric,GE,117.25,13.53,0.00277,4776349,125.79,0,1.2002,Industrials,.7561,.2932
+MetLife,MET,62.41,15.79,0.034403,3880559,45.78,-.3752,3.3186,Financials,.6444,10.58
+Walgreens Boots Alliance,WBA,21.09,0,0.095191,10721297,14.42,0,0.0795,Consumer Staples,1.5121,-.1487
+AT&T,T,15.63,0,0.071245,31490032,111.40,0,1.0406,Commuinication Services,1.4409,-0.1075
+AbbVie Inc,ABBV,138.06,37.98,0.04472,4507264,244.67,-.5127,-0.0021,Healthcare,0,0.4503
+Apple Inc,AAPL,187.44,30.13,0.005195,60011535,2870,-0.0182,-0.0244,Information Technology,1.7598,1.6492
+Microsoft Corporation,MSFT,370.27,35.51,0.008182,26838166,2730,0.1131,0.3861,Information Technology,0.3514,0.3832
+Amazon.com Inc,AMZN,145.80,74.44,0,56575957,1470,0.7715,0.8342,Consumer Discretionary,0.8953,0.1232
+Alphabet Inc,GOOGL,133.62,25.34,0,32332500,897.02,0.0347,0.0584,Communication Services,0.1007,0.2524
+Snap Inc,SNAP,12.15,0,0,38098892,18.60,-.2464,0.0584,Communication Services,1.6184,-0.5366
+DropBox Inc,DBX,27.40,17.02,0,2849879,9.35,0.6742,0.3861,Information Technology,-5.0025,-1.2485
+GoPro Inc,GPRO,3.43,0,0,3307476,0.48957,0,0.0205,Consumer Discretionary,0.2930,-0.0447
+JPMorgan Chase & Co,JPM,148.44,9.38,0.028811,9926211,423.65,0.4147,0.2877,Financials,1.1752,0.1785
+International Business Machines,IMB,150.41,19.78,0.044835,4316339,135.23,4.1192,0.6635,Information Technology,2.3447,0.3197
+Tesla Inc,TSLA,237.41,72.09,0,148454676,711.16,-0.0391,0.028,Consumer Discretionary,0.0853,0.2180
+NVIDIA Corporation,NVDA,496.56,117.45,0.000329,41536673,1200,0.3574,0.2460,Information Technology,0.4320,0.4326
