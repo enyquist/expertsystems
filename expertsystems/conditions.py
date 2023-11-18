@@ -124,3 +124,20 @@ def high_roe_condition(engine: ExpertSystem) -> bool:
     Returns True if any stock in the engine.facts has a return on equity greater than ROE_THRESHOLD, False otherwise.
     """
     return any(stock.roe > ROE_THRESHOLD for stock in engine.facts)
+
+
+def undervalued_condition(engine: ExpertSystem) -> bool:
+    """
+    Returns True if any stock in the engine.facts is undervalued, False otherwise.
+    """
+    return any(
+        [
+            cheap_stock_condition(engine),
+            low_pegy_ratio_condition(engine),
+            low_pe_condition(engine),
+            high_dividend_yield_condition(engine),
+            low_debt_equity_ratio_condition(engine),
+            value_stock_condition(engine),
+            growth_stock_condition(engine),
+        ]
+    )

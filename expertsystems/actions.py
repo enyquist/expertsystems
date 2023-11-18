@@ -39,7 +39,7 @@ def advise_undervalued_stocks(engine: ExpertSystem) -> None:
         if stock.earnings_growth > EARNINGS_GROWTH_THRESHOLD and stock.pe > VALUE_PE_THRESHOLD:
             reasons.append(
                 f"the earnings growth is higher than {EARNINGS_GROWTH_THRESHOLD:0.2%} ({stock.earnings_growth:0.2%}) "
-                "and the P/E ratio is higher than {VALUE_PE_THRESHOLD} ({stock.pe}) suggest this is a growth stock"
+                f"and the P/E ratio is higher than {VALUE_PE_THRESHOLD} ({stock.pe}) suggest this is a growth stock"
             )
 
         if reasons:

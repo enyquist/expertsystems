@@ -6,14 +6,7 @@ import pandas as pd
 
 # expert systems libraries
 from expertsystems.actions import advise_undervalued_stocks
-from expertsystems.conditions import (
-    growth_stock_condition,
-    high_dividend_yield_condition,
-    low_debt_equity_ratio_condition,
-    low_pe_condition,
-    low_pegy_ratio_condition,
-    value_stock_condition,
-)
+from expertsystems.conditions import undervalued_condition
 from expertsystems.expert_system import ExpertSystem
 from expertsystems.fact import Stock
 
@@ -31,12 +24,7 @@ def interactive_engine():
     es = ExpertSystem()
 
     # Define the rules with names
-    @es.rule(low_pegy_ratio_condition, name="advise_low_pegy_ratio")
-    @es.rule(low_pe_condition, name="advise_low_pe")
-    @es.rule(high_dividend_yield_condition, name="advise_high_dividend_yield")
-    @es.rule(low_debt_equity_ratio_condition, name="advise_low_debt_equity_ratio")
-    @es.rule(value_stock_condition, name="advise_value_stock")
-    @es.rule(growth_stock_condition, name="advise_growth_stock")
+    @es.rule(undervalued_condition, name="advise_undervalued")
     def advise_undervalued(engine: ExpertSystem):
         advise_undervalued_stocks(engine)
 
@@ -47,7 +35,7 @@ def interactive_engine():
     es.facts.extend(load_data())
 
     # Enable Rules  TODO - make this interactive
-    es.enable_rule("advise_low_pegy_ratio")
+    es.enable_rule("advise_undervalued")
 
     # Make recommendation based on the enabled rules
     es.run()
